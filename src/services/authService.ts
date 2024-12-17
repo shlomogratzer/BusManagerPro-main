@@ -1,7 +1,7 @@
 import { CookieOptions, Response } from "express";
 import { comparePassword } from "../helpers/bcrypt";
 import { generateAuthToken } from "../helpers/jwt";
-import Users from "../models/user";
+import Users, { IUser } from "../models/user";
 import { handleBadRequest } from "../utils/ErrorHandle";
 
 const cookieConfig: CookieOptions = {
@@ -39,14 +39,18 @@ const login = async (user: userDTO, res: Response) => {
     }
 
     const { _id } = foundUser;
-    let token = "fspdfjsdaf"; //generateAuthToken({ _id, isAdmin: false });
+    if (typeof _id === "string") {
+      const token = generateAuthToken(_id, false);
 
-    if (!cookieConfig) {
-      throw new Error("Cookie configuration is missing");
+      if (!cookieConfig) {
+        throw new Error("Cookie configuration is missing");
+      }
+
+      res.cookie("auth_token", token, cookieConfig);
+      return { foundUser, token };
+    } else {
+      throw new Error("id not provider in type string");
     }
-
-    res.cookie("auth_token", token, cookieConfig);
-    return { foundUser, token };
   } catch (error: any) {
     error.status = 404;
     return handleBadRequest("MongoDB", error);
