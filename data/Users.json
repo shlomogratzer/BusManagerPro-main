@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "1234",
+    "role": "driver"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "password": "1234",
+    "role": "admin"
+  },
+  {
+    "name": "Michael Johnson",
+    "email": "michaelj@example.com",
+    "password": "1234",
+    "role": "passenger"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "lineNumber": "5",
+    "name": "Central Line",
+    "stations": ["Station A", "Station B", "Station C"],
+    "schedule": [
+      {
+        "departureTime": "08:00",
+        "arrivalTime": "08:10",
+        "station": "Station A"
+      },
+      {
+        "departureTime": "08:10",
+        "arrivalTime": "08:20",
+        "station": "Station B"
+      },
+      {
+        "departureTime": "08:20",
+        "arrivalTime": "08:30",
+        "station": "Station C"
+      }
+    ]
+  },
+  {
+    "lineNumber": "10",
+    "name": "East Line",
+    "stations": ["Station D", "Station E", "Station F"],
+    "schedule": [
+      {
+        "departureTime": "09:00",
+        "arrivalTime": "09:10",
+        "station": "Station D"
+      },
+      {
+        "departureTime": "09:10",
+        "arrivalTime": "09:20",
+        "station": "Station E"
+      },
+      {
+        "departureTime": "09:20",
+        "arrivalTime": "09:30",
+        "station": "Station F"
+      }
+    ]
+  }
+]
