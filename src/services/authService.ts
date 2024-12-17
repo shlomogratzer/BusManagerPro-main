@@ -39,7 +39,7 @@ const login = async (user: userDTO, res: Response) => {
     }
 
     const { _id } = foundUser;
-    let token = generateAuthToken({ _id });
+    let token = "fspdfjsdaf"; //generateAuthToken({ _id, isAdmin: false });
 
     if (!cookieConfig) {
       throw new Error("Cookie configuration is missing");
