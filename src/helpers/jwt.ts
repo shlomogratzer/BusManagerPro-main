@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import { Request, Response, NextFunction } from "express";
-import User, { IUser } from "../src/models/user";
+import User, { IUser } from "../models/user";
 
 // Define interface for token payload
 interface TokenPayload {

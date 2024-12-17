@@ -6,11 +6,11 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import chalk from "chalk";
 
-import loadInitialData from "./src/initailData";
+import loadInitialData from "./initailData";
 
 import { Server } from "socket.io";
 import HTTP from "http";
-import { mainSocketManager } from "./src/sockets/mainSocket";
+import { mainSocketManager } from "./sockets/mainSocket";
 
 const app: Express = express();
 const server = HTTP.createServer(app);

@@ -1,6 +1,6 @@
 import { Response } from "express";
 import Line, { ILine } from "../models/line";
-import { handleBadRequest } from "../../utils/ErrorHandle";
+import { handleBadRequest } from "../utils/ErrorHandle";
 
 // לקבל את כל הנתיבים
 const getAllLines = async () => {

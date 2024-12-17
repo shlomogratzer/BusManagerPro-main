@@ -6,7 +6,7 @@ import {
   updateLine,
   deleteLine,
 } from "../services/linesService";
-import { handleError } from "../../utils/ErrorHandle";
+import { handleError } from "../utils/ErrorHandle";
 
 const router: IRouter = express.Router();
 

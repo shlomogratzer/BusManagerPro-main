@@ -1,7 +1,7 @@
 import { Response } from "express";
-import { generateUserPassword } from "../../helpers/bcrypt";
+import { generateUserPassword } from "../helpers/bcrypt";
 import User, { IUser } from "../models/user";
-import { handleBadRequest } from "../../utils/ErrorHandle";
+import { handleBadRequest } from "../utils/ErrorHandle";
 
 const getUsersByQueryParams = async (page: number = 1, limit: number = 10) => {
   try {

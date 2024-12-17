@@ -1,8 +1,8 @@
 import { CookieOptions, Response } from "express";
-import { comparePassword } from "../../helpers/bcrypt";
-import { generateAuthToken } from "../../helpers/jwt";
+import { comparePassword } from "../helpers/bcrypt";
+import { generateAuthToken } from "../helpers/jwt";
 import Users from "../models/user";
-import { handleBadRequest } from "../../utils/ErrorHandle";
+import { handleBadRequest } from "../utils/ErrorHandle";
 
 const cookieConfig: CookieOptions = {
   httpOnly: true, // הגנה מפני XSS - הקוקי לא נגיש דרך JavaScript בצד הלקוח

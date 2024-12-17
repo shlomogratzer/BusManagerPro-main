@@ -1,7 +1,7 @@
 import express, { IRouter, Request, Response } from "express";
 import { login, logout } from "../services/authService";
-import { handleError } from "../../utils/ErrorHandle";
-import { verifyUserToRef } from "../../helpers/jwt";
+import { handleError } from "../utils/ErrorHandle";
+import { verifyUserToRef } from "../helpers/jwt";
 
 const router: IRouter = express.Router();
 

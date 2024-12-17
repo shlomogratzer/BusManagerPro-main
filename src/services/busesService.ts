@@ -1,6 +1,6 @@
 import { Response } from "express";
 import Bus, { IBus } from "../models/bus";
-import { handleBadRequest } from "../../utils/ErrorHandle";
+import { handleBadRequest } from "../utils/ErrorHandle";
 
 // לקבל את כל האוטובוסים
 const getAllBuses = async () => {

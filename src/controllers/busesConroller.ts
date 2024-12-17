@@ -6,7 +6,7 @@ import {
   updateBus,
   deleteBus,
 } from "../services/busesService";
-import { handleError } from "../../utils/ErrorHandle";
+import { handleError } from "../utils/ErrorHandle";
 
 const router: IRouter = express.Router();
 
